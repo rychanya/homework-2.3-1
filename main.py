@@ -1,5 +1,6 @@
 def user_input():
-    print('')
+    print('Введите операцию в польской нотации в формате:')
+    print('Оперотор(+, -, *, /) число1 число 2')
     try:
         operator, number_one, number_two = input().split(' ')
     except ValueError:
@@ -32,4 +33,3 @@ def calculate(operator, number_one, number_two):
 if __name__ == '__main__':
     operator, number_one, number_two = user_input()
     print(f'Результат {calculate(operator, number_one, number_two)}')
-       
